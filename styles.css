@@ -136,6 +136,11 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  align-items: center;
+}
+
+.cta-row--stores {
+  gap: 0.55rem 0.85rem;
 }
 
 .btn {
@@ -173,6 +178,49 @@ a {
   min-height: 56px;
   padding-inline: 1.8rem;
   font-size: 1.05rem;
+}
+
+.btn-store {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  text-decoration: none;
+  transition: transform 0.15s ease, opacity 0.15s ease, filter 0.15s ease;
+}
+
+.btn-store:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+  filter: brightness(1.06);
+}
+
+.btn-store__badge {
+  display: block;
+  height: auto;
+}
+
+.btn-store__badge--play {
+  width: 180px;
+}
+
+.btn-store__badge--apple {
+  width: 152px;
+}
+
+.btn-store--lg .btn-store__badge--play {
+  width: min(280px, 78vw);
+}
+
+.btn-store--lg .btn-store__badge--apple {
+  width: min(236px, 68vw);
+}
+
+.download__stores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem 1.1rem;
 }
 
 .section {
